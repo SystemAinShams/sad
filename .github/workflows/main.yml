@@ -4,12 +4,12 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      -name: Print the triggering event
-      run: echo "The job is triggered by ${{github.event_runner}}."
-      -name: Print the OS
-      run: echo "The job is running on ${{runner.os}} server."
-      -name: print the branch the workflow is running on
-      run: echo "The job is running on ${{github.ref}} branch."
-      -name: Checkout the source code of the repo
-      uses: actions/checkout@v4
-      run: echo "Cloning the ${{github.repository}} repository."
+      - name: Print the triggering event
+      - run: echo "The job is triggered by ${{github.event_runner}}."
+      - name: Print the OS
+      - run: echo "The job is running on ${{runner.os}} server."
+      - name: print the branch the workflow is running on
+      - run: echo "The job is running on ${{github.ref}} branch."
+      - name: Checkout the source code of the repo
+      - uses: actions/checkout@v4
+      - run: echo "Cloning the ${{github.repository}} repository."
