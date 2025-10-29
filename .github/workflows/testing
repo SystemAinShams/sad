@@ -2,7 +2,7 @@ name: testing
 on: push
 jobs:
   Explore-GitHub-Actions:
-    run: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       name: Print the triggering event
       run: echo "The job is triggered by ${{github.event_runner}}."
